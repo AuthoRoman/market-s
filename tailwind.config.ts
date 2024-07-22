@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "footer-bg": "url('@/assets/footer_img/bg.svg')",
+        "slider-bg": "url('@/assets/bgSlider.svg')",
       },
       colors: {
         "main-color": "#414141",
