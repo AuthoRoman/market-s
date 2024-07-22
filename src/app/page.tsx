@@ -1,9 +1,10 @@
+import Slider from "@/components/Slider/Slider";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex body__without__footer flex-col items-center justify-between p-24">
-      
+    <main className=" body__without__footer pt-[6px]  ">
+      <Slider/>
     </main>
   );
 }
