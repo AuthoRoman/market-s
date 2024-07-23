@@ -2,22 +2,22 @@
 
 import React from "react";
 import icoFood from "@/assets/foodSlide.png";
-import vegatables from '@/assets/vegatables.png'
+import vegatables from "@/assets/vegatables.png";
 import Image from "next/image";
-import {   Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import 'swiper/css'
+import "swiper/css";
 
 const Slider = () => {
   return (
-    <div className="  w-full bg-slider-bg bg-white h-[200px] bg-cover flex items-center overflow-hidden   ">
+    <div className=" cursor-grab  w-full bg-slider-bg bg-white h-[200px] bg-cover flex items-center overflow-hidden   ">
       <Swiper
-      autoplay={{
-        delay: 7500,
-        disableOnInteraction: false,
-      }}
-      modules={[Autoplay ]}
-     speed={1000}
+        autoplay={{
+          delay: 7500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay]}
+        speed={1000}
         spaceBetween={50}
         slidesPerView={1}
         onSlideChange={() => console.log("slide change")}
@@ -34,14 +34,17 @@ const Slider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-            <div className="m-auto m-w-[1208px] flex justify-between  items-center  ">
+          <div className="m-auto m-w-[1208px] flex justify-between  items-center  ">
             <div className="flex  justify-center gap-[20px] items-center w-full">
-            <Image src={vegatables} className="w-[190px] h-[202px]" alt="food" />
-              <span className="text-[48px] font-bold">
-                Все самое свежее!
-              </span>
+              <Image
+                src={vegatables}
+                className="w-[190px] h-[202px]"
+                alt="food"
+              />
+              <span className="text-[48px] font-bold">Все самое свежее!</span>
             </div>
-          </div></SwiperSlide>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );
