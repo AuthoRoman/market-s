@@ -18,8 +18,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-     
-      <body className={inter.className+' bg-[#FBF8EC] h-fit'}> <MyHeader/>{children}<MyFooter/></body>
+      <body className={inter.className + " bg-[#FBF8EC] h-fit"}>
+        {" "}
+        <MyHeader />
+        {children}
+        <MyFooter />
+      </body>
     </html>
   );
 }

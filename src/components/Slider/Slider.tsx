@@ -20,8 +20,6 @@ const Slider = () => {
         speed={1000}
         spaceBetween={50}
         slidesPerView={1}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         <SwiperSlide>
           <div className="m-auto m-w-[1208px] flex justify-between  items-center  ">

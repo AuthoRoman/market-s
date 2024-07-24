@@ -10,8 +10,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "footer-bg": "url('@/assets/footer_img/bg.svg')",
-        "slider-bg": "url('@/assets/bgSlider.svg')",
+        "footer-bg": "url('../assets/footer_img/bg.svg')",
+        "slider-bg": "url('../assets/bgSlider.svg')",
       },
       colors: {
         "main-color": "#414141",
