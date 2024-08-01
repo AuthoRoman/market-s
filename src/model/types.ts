@@ -8,6 +8,8 @@ export interface FormData {
   priceCard: number;
   priceWithoutCard: number;
   category: string;
+  img: string;
 }
+type imgWord = { img: string };
 
-export type InfoSectionsProducts = FormData & SectionBuyProps;
+export type InfoSectionsProducts = FormData & SectionBuyProps & imgWord;
