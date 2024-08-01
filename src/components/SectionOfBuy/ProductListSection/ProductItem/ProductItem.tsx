@@ -4,9 +4,9 @@ import pancakes from "@/assets/products/pancakes.png";
 import heart from "@/assets/header_img/heart.png";
 import UButton from "@/shared/ui/UButton";
 import star__full from "@/assets/star__full.png";
-import { SectionBuyProps } from "@/model/types";
+import { InfoSectionsProducts  } from "@/model/types";
 
-const ProductItem: React.FC<SectionBuyProps> = ({title}) => {
+const ProductItem: React.FC<InfoSectionsProducts> = ({title, category, name,priceCard, priceWithoutCard}) => {
   return (
     <div className="h-fit w-[272px] duration-100 ease-in bg-white rounded shadow-[1px_2px_4px_0_rgba(0,0,0,0.1)] hover:shadow-[4px_8px_16px_0_rgba(255,102,51,0.2)]">
       <div className="relative">
@@ -21,15 +21,15 @@ const ProductItem: React.FC<SectionBuyProps> = ({title}) => {
       <div className="p-2 flex flex-col gap-2">
         <div className="  text-[#414141] flex justify-between w-full">
           <div className="flex  justify-start flex-col">
-            <span className="text-[18px] font-bold ">44,50 Р</span>
+            <span className="text-[18px] font-bold ">{priceCard} Р</span>
             <span className="text-[12px] text-[#BFBFBF]">С картой</span>
           </div>
           <div className=" flex  items-end flex-col">
-            <span className="text-[18px] font-bold text-right">50,50 Р</span>
+            <span className="text-[18px] font-bold text-right">{priceWithoutCard} Р</span>
             <span className="text-[12px] text-[#BFBFBF]">Обычная</span>
           </div>
         </div>
-        <span className="text-[16px]">Г/Ц Блинчики с мясом вес, Россия</span>
+        <span className="text-[16px]">{name}</span>
         <div className="flex">
           <span>
             <Image src={star__full} alt="start full" />
