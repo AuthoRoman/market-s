@@ -6,8 +6,8 @@ import bgBusket from "@/assets/buisness/bannerBusket.png";
 
 export const SectionSpecialOffer = () => {
   return (
-    <div>
-      <div className="w-[1208px] m-auto flex flex-col gap-10">
+    
+      <div className="w-[1208px] m-auto flex flex-col gap-10 my-[120px]">
         <span className="font-bold text-[36px]">Специальные предложения</span>
         <div className="flex justify-between items-center">
           <div className="h-[200px] w-[574.85px] flex items-center justify-center rounded bg-[#FCD5BA] gap-[21px] hover:shadow-[0_8px_16px_0_rgba(202,147,96,0.5)] duration-100 ease-in hover:cursor-pointer">
@@ -26,6 +26,6 @@ export const SectionSpecialOffer = () => {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 };
