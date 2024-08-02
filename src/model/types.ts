@@ -1,5 +1,5 @@
 export interface SectionBuyProps {
-  title: "promotion" | "new" | "before";
+  title: "promotion" | "new" | "before" | "articles";
 }
 
 export interface FormData {

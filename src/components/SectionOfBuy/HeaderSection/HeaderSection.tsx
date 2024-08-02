@@ -9,6 +9,8 @@ const HeaderSection: React.FC<SectionBuyProps> = ({ title }) => {
       ? "Покупали раньше"
       : title === "new"
       ? "Новинки"
+      : title === "articles"
+      ? "Статьи"
       : "";
   const actualText =
     title === "promotion"
@@ -17,6 +19,8 @@ const HeaderSection: React.FC<SectionBuyProps> = ({ title }) => {
       ? "все покупки"
       : title === "new"
       ? "все новинки"
+      : title === "articles"
+      ? "Все статьи"
       : "";
   return (
     <div className="w-full flex justify-between">

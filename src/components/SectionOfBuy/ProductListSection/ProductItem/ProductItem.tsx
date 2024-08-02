@@ -33,19 +33,19 @@ const ProductItem: React.FC<InfoSectionsProducts> = ({title, category, name,pric
         <span className="text-[16px]">{name}</span>
         <div className="flex">
           <span>
-            <Image src={star__full} alt="start full" />
+            <Image src={star__full} alt="star full" />
           </span>
           <span>
-            <Image src={star__full} alt="start full" />
+            <Image src={star__full} alt="star full" />
           </span>
           <span>
-            <Image src={star__full} alt="start full" />
+            <Image src={star__full} alt="star full" />
           </span>
           <span>
-            <Image src={star__full} alt="start full" />
+            <Image src={star__full} alt="star full" />
           </span>
           <span>
-            <Image src={star__full} alt="start full" />
+            <Image src={star__full} alt="star full" />
           </span>
         </div>
 
