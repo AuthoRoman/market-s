@@ -2,7 +2,7 @@ import React from "react";
  
 import Image from "next/image";
 import card from "@/assets/buisness/card.png";
-import bgBusket from "@/assets/buisness/bannerBusket.png";
+ 
 
 export const SectionSpecialOffer = () => {
   return (
@@ -17,7 +17,7 @@ export const SectionSpecialOffer = () => {
             </div>
             <Image width={206} src={card} alt="card" />
           </div>
-          <div className="h-[200px] w-[574.85px] flex items-center justify-start p-10 rounded bg-[url('@/assets/buisness/bannerBusket.png')] gap-[21px] hover:shadow-[4px_8px_16px_0_rgba(112,192,91,0.2)] duration-100 ease-in hover:cursor-pointer">
+          <div className="h-[200px] w-[574.85px] flex items-center justify-start p-10 rounded bg-[url('../assets/buisness/bannerBusket.png')] gap-[21px] hover:shadow-[4px_8px_16px_0_rgba(112,192,91,0.2)] duration-100 ease-in hover:cursor-pointer">
             <div className="max-w-[258px]">
               <div className="text-[24px] font-bold">Покупайте акционные товары</div>
               <div className = "text-4">И получайте вдвое больше бонусов</div>
