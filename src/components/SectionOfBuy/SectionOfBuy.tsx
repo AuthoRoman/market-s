@@ -5,7 +5,7 @@ import { SectionBuyProps } from "@/model/types";
 
  
 
-const SectionOfBuy: React.FC<SectionBuyProps> = ({title}) => {
+export const SectionOfBuy: React.FC<SectionBuyProps> = ({title}) => {
   return (
     <div className="flex flex-col max-w-[1208px] m-auto my-20 ">
       <HeaderSection title={title} />
@@ -14,4 +14,4 @@ const SectionOfBuy: React.FC<SectionBuyProps> = ({title}) => {
   );
 };
 
-export default SectionOfBuy;
+ 

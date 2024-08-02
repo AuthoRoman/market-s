@@ -1,4 +1,5 @@
-import SectionOfBuy from "@/components/SectionOfBuy/SectionOfBuy";
+import {SectionOfBuy} from "@/components/SectionOfBuy/SectionOfBuy";
+import { SectionSpecialOffer } from "@/components/SectionSpecialOffer/SectionSpecialOffer";
 import Slider from "@/components/Slider/Slider";
  
 
@@ -9,6 +10,7 @@ export default function Home() {
       <SectionOfBuy title={'promotion'} />
       <SectionOfBuy title={'new'} />
       <SectionOfBuy title={'before'} />
+      <SectionSpecialOffer/>
     </main>
   );
 }
