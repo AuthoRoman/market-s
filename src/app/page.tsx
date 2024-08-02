@@ -1,3 +1,4 @@
+import SectionArticles from "@/components/SectionArticles/SectionArticles";
 import SectionLocation from "@/components/SectionLocation/SectionLocation";
 import {SectionOfBuy} from "@/components/SectionOfBuy/SectionOfBuy";
 import { SectionSpecialOffer } from "@/components/SectionSpecialOffer/SectionSpecialOffer";
@@ -13,6 +14,7 @@ export default function Home() {
       <SectionOfBuy title={'before'} />
       <SectionSpecialOffer/>
       <SectionLocation/>
+      <SectionArticles/>
     </main>
   );
 }
