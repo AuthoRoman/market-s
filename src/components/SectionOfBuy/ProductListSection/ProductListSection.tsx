@@ -20,13 +20,13 @@ async function getProducts(queryProp: string): Promise<FormData[]> {
   return res.json();
 }
 
-const ProductListSection: React.FC<SectionBuyProps> = async ({ title }) => {
+const ProductListSection: React.FC<SectionBuyProps> = async ({ title, limited }) => {
   const data = await getProducts(title);
   console.log(data)
   return (
     <div className="flex gap-10 items-center flex-wrap max-w-full ">
       {data.map((x, index) => {
-        if (index < 4) {
+         if (index < 4  && limited) {
           return (
             <ProductItem
             img={x.img!}
@@ -39,7 +39,20 @@ const ProductListSection: React.FC<SectionBuyProps> = async ({ title }) => {
               title={title}
             />
           );
-        }
+        }if(!limited){
+          return (
+            <ProductItem
+            img={x.img!}
+            id={x.id}
+              key={x.id}
+              name={x.name}
+              priceCard={x.priceCard}
+              priceWithoutCard={x.priceWithoutCard}
+              category={x.category}
+              title={title}
+            />
+          );
+        } 
       })}
       
     </div>

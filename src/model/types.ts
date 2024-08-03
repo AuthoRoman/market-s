@@ -1,5 +1,6 @@
 export interface SectionBuyProps {
   title: "promotion" | "new" | "before" | "articles";
+  limited: boolean;
 }
 
 export interface FormData {
@@ -12,4 +13,6 @@ export interface FormData {
 }
 type imgWord = { img: string };
 
-export type InfoSectionsProducts = FormData & SectionBuyProps & imgWord;
+export type InfoSectionsProducts = FormData &
+  Pick<SectionBuyProps, "title"> &
+  imgWord;

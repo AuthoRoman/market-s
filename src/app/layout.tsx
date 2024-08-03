@@ -24,7 +24,10 @@ export default function RootLayout({
       <body className={inter.className + " bg-[#FBF8EC] h-fit"}>
         {" "}
         <MyHeader />
-        {children}
+        <main className="body__without__footer">
+          {children}
+        </main>
+        
         <MyFooter />
       </body>
     </html>
