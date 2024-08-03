@@ -1,7 +1,4 @@
 import React from "react";
-import { InfoSectionsProductsName } from "@/model/types";
-import SectionCategoryLists from "@/components/SectionCategoryLists/SectionCategoryLists";
-import SectionArticles from "@/components/SectionArticles/SectionArticles";
 import ArticleCard from "@/components/SectionArticles/ArticleCard";
 
 export default function Articles() {
