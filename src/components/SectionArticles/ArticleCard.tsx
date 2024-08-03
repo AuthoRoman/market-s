@@ -4,11 +4,11 @@ import stop from "@/assets/articles/stop_mask.jpg";
 import morning from "@/assets/articles/morning.jpg";
 import food from "@/assets/articles/food.jpg";
 
-interface ArticleCard {
+interface ArticleCardProps {
   type: string;
 }
 
-const ArticleCard: React.FC<ArticleCard> = ({ type }) => {
+const ArticleCard: React.FC<ArticleCardProps> = ({ type }) => {
   const icoPath = {
     stop_mask: stop,
     morning: morning,
