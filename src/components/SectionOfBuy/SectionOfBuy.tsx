@@ -5,11 +5,11 @@ import { SectionBuyProps } from "@/model/types";
 
  
 
-export const SectionOfBuy: React.FC<SectionBuyProps> = ({title}) => {
+export const SectionOfBuy: React.FC<SectionBuyProps> = ({title, limited}) => {
   return (
     <div className="flex flex-col max-w-[1208px] m-auto my-20 ">
       <HeaderSection title={title} />
-      <ProductListSection  title={title}/>
+      <ProductListSection limited = {limited} title={title}/>
     </div>
   );
 };

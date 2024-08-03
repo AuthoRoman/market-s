@@ -1,7 +1,10 @@
 import { SectionBuyProps } from "@/model/types";
+import Link from "next/link";
 import React from "react";
 
-const HeaderSection: React.FC<SectionBuyProps> = ({ title }) => {
+type titleProps = Pick<SectionBuyProps, 'title'>
+
+const HeaderSection: React.FC<titleProps> = ({ title }) => {
   const actualTitle =
     title === "promotion"
       ? "Акции"
@@ -25,10 +28,16 @@ const HeaderSection: React.FC<SectionBuyProps> = ({ title }) => {
   return (
     <div className="w-full flex justify-between">
       <span className="text-[36px] font-bold">{actualTitle}</span>
+      <Link href={`/${title}`}>
+      <>
       <span className="leading-[128px] text-[15px] text-[#606060] hover:cursor-pointer">
         {actualText}
         <span className="ml-4">{">"}</span>
-      </span>
+        </span>
+      </>
+       
+        </Link>
+      
     </div>
   );
 };
