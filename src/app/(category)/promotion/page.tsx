@@ -2,10 +2,8 @@ import React from "react";
 import { InfoSectionsProductsName } from "@/model/types";
 import SectionCategoryLists from "@/components/SectionCategoryLists/SectionCategoryLists";
 
-const Promotion: React.FC<InfoSectionsProductsName> = async ({
-  title = "promotion",
-}) => {
-  return <SectionCategoryLists title={title} />;
+export default function Promotion() {
+  return <SectionCategoryLists title={'promotion'} />;
 };
 
-export default Promotion;
+ 
