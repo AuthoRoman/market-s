@@ -7,8 +7,8 @@ import { SectionBuyProps } from "@/model/types";
 
 export const SectionOfBuy: React.FC<SectionBuyProps> = ({title, limited}) => {
   return (
-    <div className="flex flex-col max-w-[1208px] m-auto my-20 ">
-      <HeaderSection title={title} />
+    <div className={    limited ? "my-20 flex flex-col max-w-[1208px] m-auto" : "my-10 flex flex-col max-w-[1208px] m-auto"}>
+        <HeaderSection title={title} limited = {limited} /> 
       <ProductListSection limited = {limited} title={title}/>
     </div>
   );

@@ -3,7 +3,7 @@ import { Rubik } from "next/font/google";
 import "./globals.css";
 import MyHeader from "@/components/Header/MyHeader";
 import MyFooter from "@/components/Footer/MyFooter";
-import ico from '@/app/favicon.ico'
+import ico from "@/app/favicon.ico";
 import Head from "next/head";
 
 const inter = Rubik({ subsets: ["latin"] });
@@ -20,14 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       
       <body className={inter.className + " bg-[#FBF8EC] h-fit"}>
         {" "}
         <MyHeader />
-        <main className="body__without__footer">
-          {children}
-        </main>
-        
+        <main className="body__without__footer">{children}</main>
         <MyFooter />
       </body>
     </html>
