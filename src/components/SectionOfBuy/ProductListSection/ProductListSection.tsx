@@ -39,7 +39,8 @@ const ProductListSection: React.FC<SectionBuyProps> = async ({ title, limited })
               title={title}
             />
           );
-        }if(!limited){
+        }
+        if(!limited){
           return (
             <ProductItem
             img={x.img!}
