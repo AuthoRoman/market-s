@@ -4,7 +4,7 @@ import SectionCategoryLists from "@/components/SectionCategoryLists/SectionCateg
 import SectionArticles from "@/components/SectionArticles/SectionArticles";
 import ArticleCard from "@/components/SectionArticles/ArticleCard";
 
-const Articles: React.FC<InfoSectionsProductsName> = async () => {
+export default function Articles() {
   return (
     <div className="w-[1208px] m-auto flex flex-col gap-10 my-10">
       <span className="font-bold text-[36px]">Статьи</span>
@@ -22,5 +22,4 @@ const Articles: React.FC<InfoSectionsProductsName> = async () => {
     </div>
   );
 };
-
-export default Articles;
+ 
