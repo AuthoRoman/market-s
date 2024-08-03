@@ -1,8 +1,8 @@
 import React from "react";
-import { SectionBuyProps } from "@/model/types";
+import { InfoSectionsProductsName } from "@/model/types";
 import SectionCategoryLists from "@/components/SectionCategoryLists/SectionCategoryLists";
 
-const New: React.FC<SectionBuyProps> = async ({
+const New: React.FC<InfoSectionsProductsName> = async ({
   title = "new",
 }) => {
   return <SectionCategoryLists title={title} />;

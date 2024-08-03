@@ -13,6 +13,8 @@ export interface FormData {
 }
 type imgWord = { img: string };
 
+export type InfoSectionsProductsName = Pick<SectionBuyProps, "title">;
+
 export type InfoSectionsProducts = FormData &
   Pick<SectionBuyProps, "title"> &
   imgWord;
