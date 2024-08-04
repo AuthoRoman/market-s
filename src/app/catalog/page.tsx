@@ -25,7 +25,7 @@ const Catalog = () => {
         hover:bg-[linear-gradient(180deg,rgba(255,102,51,0)_0%,_#f63_100%),url("/images/catalog_food/freeze_food.jpg")]'>
         <span className=" bottom-[10px] left-[10px] absolute">Замороженные продукты</span>
         </div>
-        <div className='bg-[linear-gradient(180deg,rgba(112,192,91,0)_40%,#70c05b_86.81%),url("/images/catalog_food/drink_food.jpg")] max-w-[272px] w-full h-[200px]  h-100% h-[200px] text-white font-bold text-[18px] relative cursor-pointer
+        <div className='bg-[linear-gradient(180deg,rgba(112,192,91,0)_40%,#70c05b_86.81%),url("/images/catalog_food/drink_food.jpg")] max-w-[272px] w-full h-[200px]  h-100%   text-white font-bold text-[18px] relative cursor-pointer
         hover:bg-[linear-gradient(180deg,rgba(255,102,51,0)_0%,_#f63_100%),url("/images/catalog_food/drink_food.jpg")]'>
         <span className=" bottom-[10px] left-[10px] absolute">Напитки</span>
         </div>
