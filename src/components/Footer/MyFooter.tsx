@@ -6,6 +6,7 @@ import facebook from '@/assets/footer_img/social/face.png'
 import ok from '@/assets/footer_img/social/okss.png'
 import icoPhone from '@/assets/footer_img/phone.png'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const MyFooter = () => {
   return (
@@ -19,11 +20,11 @@ const MyFooter = () => {
           src={logo}
           alt ='logo_footer'
         />
-         <span>О компании</span>
-         <span>Контакты</span>
-         <span>Вакансии</span>
-         <span>Статьи</span>
-         <span>Политика обработки персональных данных</span>
+         <Link href={'/about'}><span className='cursor-pointer hover:text-[#FF6633]'>О компании</span></Link>
+         <Link href={'/contacts'}><span className='cursor-pointer hover:text-[#FF6633]'>Контакты</span></Link>
+         <Link href={'/vacancies'}><span className='cursor-pointer hover:text-[#FF6633]'>Вакансии</span></Link>
+         <Link href={'/articles'}><span className='cursor-pointer hover:text-[#FF6633]'>Статьи</span></Link>
+         <span className='cursor-pointer hover:text-[#FF6633]'>Политика обработки персональных данных</span>
       </div>
       <div className='flex gap-10'>
         <div className='flex gap-4 items-center'>
