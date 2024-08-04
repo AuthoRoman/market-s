@@ -18,11 +18,11 @@ const MyHeader = () => {
             <Image src={logo} alt="logo" width={152} />
           </Link>
           <div className="flex gap-6">
-            <div className="w-[140px] text-base bg-[#70C05B] h-10 rounded  text-white  flex justify-center items-center gap-2 hover: cursor-pointer">
+            <Link href={'/catalog'}> <div className="w-[140px] text-base bg-[#70C05B] h-10 rounded  text-white  flex justify-center items-center gap-2 hover: cursor-pointer">
               <Image src={menu} width={24} alt="menu" />
               <span> Каталог</span>
             </div>
-
+</Link>
             <div className=" relative   ">
               <input
                 type="text"

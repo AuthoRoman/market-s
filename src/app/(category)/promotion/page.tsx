@@ -1,9 +1,8 @@
 import React from "react";
-import { InfoSectionsProductsName } from "@/model/types";
-import SectionCategoryLists from "@/components/SectionCategoryLists/SectionCategoryLists";
+import { SectionOfBuy } from "@/components/SectionOfBuy/SectionOfBuy";
 
 export default function Promotion() {
-  return <SectionCategoryLists title={'promotion'} />;
+  return <SectionOfBuy limited={false} title="promotion" />;
 };
 
  

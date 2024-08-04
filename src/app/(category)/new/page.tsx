@@ -1,9 +1,9 @@
 import React from "react";
-import { InfoSectionsProductsName } from "@/model/types";
-import SectionCategoryLists from "@/components/SectionCategoryLists/SectionCategoryLists";
+ 
+import { SectionOfBuy } from "@/components/SectionOfBuy/SectionOfBuy";
 
 export default function New() {
-  return <SectionCategoryLists title={'new'} />;
+  return <SectionOfBuy limited={false} title="new" />;
 };
 
  
