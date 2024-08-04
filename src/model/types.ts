@@ -1,5 +1,5 @@
 export interface SectionBuyProps {
-  title: "promotion" | "new" | "before" | "articles";
+  title: "promotion" | "new" | "before" | "articles" | "catalog";
   limited: boolean;
 }
 

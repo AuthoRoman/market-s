@@ -13,7 +13,7 @@ const HeaderSection: React.FC<SectionBuyProps> = ({ title,limited }) => {
       : title === "new"
       ? "Новинки"
       : title === "articles"
-      ? "Статьи"
+      ? "Статьи": title === "catalog" ? 'Каталог'
       : "";
   const actualText =
     title === "promotion"
