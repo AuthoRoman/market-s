@@ -27,6 +27,7 @@ export interface FormData {
   priceCard: number;
   priceWithoutCard: number;
   category: string;
+  catalogtype?: string;
   img: string;
 }
 type imgWord = { img: string };
