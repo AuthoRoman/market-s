@@ -1,6 +1,7 @@
 import React from "react";
 import ProductItem from "./ProductItem/ProductItem";
 import { FormData, SectionBuyProps } from "@/model/types";
+import Link from "next/link";
 
 export const dynamic = "force-dynamic";
 
@@ -50,30 +51,30 @@ const ProductListSection: React.FC<SectionBuyProps> = async ({
       {data.length>0 ? data.map((x, index) => {
         if (index < 4 && limited) {
           return (
-            <ProductItem
+            <Link  key={x.id} href={`/products/${x.id}`} > <ProductItem
               img={x.img!}
               id={x.id}
-              key={x.id}
+             
               name={x.name}
               priceCard={x.priceCard}
               priceWithoutCard={x.priceWithoutCard}
               category={x.category}
               title={title}
-            />
+            /></Link>
           );
         }
         if (!limited) {
           return (
-            <ProductItem
+            <Link  key={x.id} href={`/products/${x.id}`} ><ProductItem
               img={x.img!}
               id={x.id}
-              key={x.id}
+              
               name={x.name}
               priceCard={x.priceCard}
               priceWithoutCard={x.priceWithoutCard}
               category={x.category}
               title={title}
-            />
+            /></Link>
           );
         }
       }): ''}
