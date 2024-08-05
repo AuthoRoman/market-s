@@ -1,5 +1,23 @@
 export interface SectionBuyProps {
-  title: "promotion" | "new" | "before" | "articles" | "catalog";
+  title:
+    | "promotion"
+    | "new"
+    | "before"
+    | "articles"
+    | "catalog"
+    | "milk_food"
+    | "bread_food"
+    | "veg_food"
+    | "freeze_food"
+    | "drink_food"
+    | "sweets_food"
+    | "cofee_food"
+    | "grocery_food"
+    | "healstyle_food"
+    | "zood_food"
+    | "kido_food"
+    | "meat_food"
+    | "clean_nofood";
   limited: boolean;
 }
 
@@ -9,6 +27,7 @@ export interface FormData {
   priceCard: number;
   priceWithoutCard: number;
   category: string;
+  catalogtype?: string;
   img: string;
 }
 type imgWord = { img: string };

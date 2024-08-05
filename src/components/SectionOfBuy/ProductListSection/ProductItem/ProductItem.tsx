@@ -10,12 +10,15 @@ const ProductItem: React.FC<InfoSectionsProducts> = ({title, category, name,pric
   const icoPath =  `/images/products/${img}`
   return (
     <div className="h-fit w-[272px] duration-100 ease-in bg-white rounded shadow-[1px_2px_4px_0_rgba(0,0,0,0.1)] hover:shadow-[4px_8px_16px_0_rgba(255,102,51,0.2)]">
-      <div className="relative">
-        <Image className="" width={500} height={500} src={icoPath} alt={icoPath}/>
+      <div className="relative ">
+        <div className="m-2-[272px]">
+        <Image className="m-w-272px" width={272} height={160} src={icoPath} alt={icoPath}/>  
+        </div>
+        
         <div className="absolute right-2 top-2 hover:cursor-pointer bg-[#f3f2f18f] pt-[6.5px] px-[5.05px] pb-[6.27px] rounded">
           <Image src={heart} alt="like" />
         </div>
-        {title==='promotion' &&(<div className="absolute left-[10px] bottom-[10px] bg-[#FF6633] py-1 px-2 rounded text-white">
+        {category==='promotion' &&(<div className="absolute left-[10px] bottom-[10px] bg-[#FF6633] py-1 px-2 rounded text-white">
           -50%
         </div>)}
       </div>
@@ -23,9 +26,9 @@ const ProductItem: React.FC<InfoSectionsProducts> = ({title, category, name,pric
         <div className="  text-[#414141] flex justify-between w-full">
           <div className="flex  justify-start flex-col">
             <span className="text-[18px] font-bold ">{priceCard} Р</span>
-            {title==='promotion' &&<span className="text-[12px] text-[#BFBFBF]">С картой</span>}
+            {category==='promotion' &&<span className="text-[12px] text-[#BFBFBF]">С картой</span>}
           </div>
-          {title==='promotion' &&<div className=" flex  items-end flex-col">
+          {category==='promotion' &&<div className=" flex  items-end flex-col">
             <span className="text-[18px] font-bold text-right">{priceWithoutCard} Р</span>
              <span className="text-[12px] text-[#BFBFBF]">Обычная</span>
           </div>}
