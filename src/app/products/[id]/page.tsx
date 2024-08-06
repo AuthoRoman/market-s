@@ -33,7 +33,7 @@ const ProductInfo = async ({ params }: Props) => {
   return (
     <div>
       <div className="m-[0_auto] max-w-[1208px] ">
-        <div className="my-10">
+        <div className="mt-10">
           <div className="text-[24px] font-bold my-10">{product.name}</div>
           <div className="flex gap-10 justify-between">
             <div className="w-[500px] h-[500px] relative">
