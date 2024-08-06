@@ -5,6 +5,7 @@ import React from "react";
 import smile from '@/assets/icons/smile.png'
 import DinDonIcon from "@/components/Icons/DinDonIcon";
 import { SectionOfBuy } from "@/components/SectionOfBuy/SectionOfBuy";
+import TableInfo from "@/components/TableInfo/TableInfo";
 interface Props {
   params: {
     id: string;
@@ -81,6 +82,7 @@ const ProductInfo = async ({ params }: Props) => {
                   <span className=" text-[#606060] text-[12px] w-[200px] text-center">Уведомить о снижении цены</span>  
                   </div>
               </div>
+               <TableInfo brend={product.brend} country={product.country} weight={product.weight}/>
             </div>
           </div>
         </div>
