@@ -29,6 +29,9 @@ export interface FormData {
   category: string;
   catalogtype?: string;
   img: string;
+  weight: string;
+  country: string;
+  brend: string;
 }
 type imgWord = { img: string };
 
