@@ -11,8 +11,8 @@ import Image from "next/image";
 import Link from "next/link";
 const MyHeader = () => {
   return (
-    <div className="bg-white flex items-center justify-between ">
-      <div className="m-auto  w-[1208px]">
+    <div className="bg-white m-auto flex items-center justify-between ">
+      <div className="m-auto  w-[1208px] max-[1208px]:max-w-[768px]">
         <div className="flex  h-[72px] gap-10 items-center">
           <Link href={"/"}>
           <div className="flex items-center font-bold gap-[11.41px] text-main-color">
