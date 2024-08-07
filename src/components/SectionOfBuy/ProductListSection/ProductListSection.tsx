@@ -25,10 +25,9 @@ async function getProducts(queryProp: string): Promise<FormData[]> {
     queryProp === "clean_nofood"
   ) {
     url.searchParams.set("catalogtype", queryProp);
-  }else{
+  } else {
     url.searchParams.set("category", queryProp);
   }
-  
 
   const res = await fetch(url, { cache: "no-store" });
 
@@ -48,43 +47,49 @@ const ProductListSection: React.FC<SectionBuyProps> = async ({
   console.log(data);
   return (
     <div className="flex gap-10 items-center flex-wrap max-w-full ">
-      {data.length>0 ? data.map((x, index) => {
-        if (index < 4 && limited) {
-          return (
-            <Link  key={x.id} href={`/products/${x.id}`} > <ProductItem
-              img={x.img!}
-              id={x.id}
-             brend={x.brend}
-             country={x.country}
-             weight={x.weight}
-             catalogtype={x.catalogtype}
-
-              name={x.name}
-              priceCard={x.priceCard}
-              priceWithoutCard={x.priceWithoutCard}
-              category={x.category}
-              title={title}
-            /></Link>
-          );
-        }
-        if (!limited) {
-          return (
-            <Link  key={x.id} href={`/products/${x.id}`} ><ProductItem
-              img={x.img!}
-              id={x.id}
-               brend={x.brend}
-             country={x.country}
-             weight={x.weight}
-             catalogtype={x.catalogtype}
-              name={x.name}
-              priceCard={x.priceCard}
-              priceWithoutCard={x.priceWithoutCard}
-              category={x.category}
-              title={title}
-            /></Link>
-          );
-        }
-      }): ''}
+      {data.length > 0
+        ? data.map((x, index) => {
+            if (index < 4 && limited) {
+              return (
+                <Link key={x.id} href={`/products/${x.id}`}>
+                  {" "}
+                  <ProductItem
+                    img={x.img!}
+                    id={x.id}
+                    brend={x.brend}
+                    country={x.country}
+                    weight={x.weight}
+                    catalogtype={x.catalogtype}
+                    name={x.name}
+                    priceCard={x.priceCard}
+                    priceWithoutCard={x.priceWithoutCard}
+                    category={x.category}
+                    title={title}
+                  />
+                </Link>
+              );
+            }
+            if (!limited) {
+              return (
+                <Link key={x.id} href={`/products/${x.id}`}>
+                  <ProductItem
+                    img={x.img!}
+                    id={x.id}
+                    brend={x.brend}
+                    country={x.country}
+                    weight={x.weight}
+                    catalogtype={x.catalogtype}
+                    name={x.name}
+                    priceCard={x.priceCard}
+                    priceWithoutCard={x.priceWithoutCard}
+                    category={x.category}
+                    title={title}
+                  />
+                </Link>
+              );
+            }
+          })
+        : ""}
     </div>
   );
 };
