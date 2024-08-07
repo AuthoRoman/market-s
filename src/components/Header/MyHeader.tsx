@@ -11,22 +11,25 @@ import Image from "next/image";
 import Link from "next/link";
 const MyHeader = () => {
   return (
-    <div className="bg-white flex items-center justify-between">
-      <div className="m-auto  w-[1208px]  ">
+    <div className="bg-white flex items-center justify-between ">
+      <div className="m-auto  w-[1208px]">
         <div className="flex  h-[72px] gap-10 items-center">
           <Link href={"/"}>
-            <Image src={logo} alt="logo" width={152} />
+          <div className="flex items-center font-bold gap-[11.41px] text-main-color">
+            <Image src={logo} alt="logo" width={40} />
+            <span className="max-[1208px]:hidden">СЕВЕРЯНОЧКА</span>
+          </div>
           </Link>
           <div className="flex gap-6">
-            <Link href={'/catalog'}> <div className="w-[140px] text-base bg-[#70C05B] h-10 rounded  text-white  flex justify-center items-center gap-2 hover: cursor-pointer">
+            <Link href={'/catalog'}> <div className="w-[140px] text-base bg-[#70C05B] h-10 rounded  text-white  flex justify-center items-center gap-2 hover: cursor-pointer max-[1208px]:w-[40px]">
               <Image src={menu} width={24} alt="menu" />
-              <span> Каталог</span>
+              <span className="max-[1208px]:hidden"> Каталог</span>
             </div>
 </Link>
             <div className=" relative   ">
               <input
                 type="text"
-                className="pr-10 pl-2 py-2 border-2 w-[376px] border-[#70C05B]  rounded hover: outline-none"
+                className="pr-10 pl-2 py-2 border-2 h-10 w-[376px] border-[#70C05B]  rounded hover: outline-none max-[1208px]:max-w-[324px]"
                 placeholder="Найти товар"
               />
               <Image

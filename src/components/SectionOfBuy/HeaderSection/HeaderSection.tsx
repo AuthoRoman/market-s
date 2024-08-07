@@ -52,7 +52,7 @@ const HeaderSection: React.FC<SectionBuyProps> = ({ title, limited }) => {
       ? "Все статьи"
       : "";
   return (
-    <div className="w-full flex justify-between">
+    <div className="w-full flex justify-between  max-[1208px]:max-w-[736px]">
       <span
         className={
           "" + limited

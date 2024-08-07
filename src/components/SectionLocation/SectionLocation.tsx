@@ -27,7 +27,7 @@ const SectionLocation = () => {
   }, []);
 
   return (
-    <div className="w-[1208px] m-auto flex flex-col gap-10 my-30">
+    <div className="w-[1208px] m-auto flex flex-col gap-10 my-30 max-[1208px]:max-w-[736px]">
       <span className="font-bold text-[36px]">Наши магазины</span>
       <div className="flex  gap-6 items-center">
         <button
