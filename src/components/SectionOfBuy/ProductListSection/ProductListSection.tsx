@@ -54,7 +54,11 @@ const ProductListSection: React.FC<SectionBuyProps> = async ({
             <Link  key={x.id} href={`/products/${x.id}`} > <ProductItem
               img={x.img!}
               id={x.id}
-             
+             brend={x.brend}
+             country={x.country}
+             weight={x.weight}
+             catalogtype={x.catalogtype}
+
               name={x.name}
               priceCard={x.priceCard}
               priceWithoutCard={x.priceWithoutCard}
@@ -68,7 +72,10 @@ const ProductListSection: React.FC<SectionBuyProps> = async ({
             <Link  key={x.id} href={`/products/${x.id}`} ><ProductItem
               img={x.img!}
               id={x.id}
-              
+               brend={x.brend}
+             country={x.country}
+             weight={x.weight}
+             catalogtype={x.catalogtype}
               name={x.name}
               priceCard={x.priceCard}
               priceWithoutCard={x.priceWithoutCard}

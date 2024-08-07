@@ -9,7 +9,7 @@ import { InfoSectionsProducts  } from "@/model/types";
 const ProductItem: React.FC<InfoSectionsProducts> = ({title, category, name,priceCard, priceWithoutCard, img}) => {
   const icoPath =  `/images/products/${img}`
   return (
-    <div className="h-[349px] w-[272px] duration-100 ease-in bg-white rounded shadow-[1px_2px_4px_0_rgba(0,0,0,0.1)] hover:shadow-[4px_8px_16px_0_rgba(255,102,51,0.2)]  max-[1208px]:max-w-[224px]">
+    <div className="h-[349px] w-[272px] duration-100 ease-in bg-white rounded shadow-[1px_2px_4px_0_rgba(0,0,0,0.1)] hover:shadow-[4px_8px_16px_0_rgba(255,102,51,0.2)]  max-[1208px]:max-w-[224px] max-[1208px]:h-[380px]">
       <div className="relative ">
         <div className="m-w-[272px] m-h-[160px] flex justify-center">
         <Image style={{width: '160px', height:'160px' }} className="m-w-272px m-h-[160px]" width={160} height={160} src={icoPath} alt={icoPath}/>  
@@ -22,7 +22,7 @@ const ProductItem: React.FC<InfoSectionsProducts> = ({title, category, name,pric
           -50%
         </div>)}
       </div>
-      <div className="p-2 flex flex-col gap-2 h-[189px]">
+      <div className="p-2 flex flex-col gap-2 h-[189px] max-[1208px]:h-[220px]">
         <div className="  text-[#414141] flex justify-between w-full">
           <div className="flex  justify-start flex-col">
             <span className="text-[18px] font-bold ">{priceCard} Р</span>

@@ -4,9 +4,9 @@ import ArticleCard from "./ArticleCard";
 
 const SectionArticles = () => {
   return (
-    <div className="w-[1208px] m-auto flex  flex-col  my-[120px]">
+    <div className="max-w-[1208px] m-auto flex  flex-col  my-[120px] max-[1208px]:max-w-[736px]">
       <HeaderSection limited={true}  title="articles" />
-      <div className="flex   items-center gap-10">
+      <div className="flex wrap m-w-[1208px] items-center gap-10  max-[1208px]:max-w-[736px]">
         <div>
           <ArticleCard type="stop_mask" />
         </div>
