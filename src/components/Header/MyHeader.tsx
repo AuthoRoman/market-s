@@ -11,12 +11,15 @@ import Image from "next/image";
 import Link from "next/link";
 const MyHeader = () => {
   return (
-    <div className="bg-white m-auto flex items-center justify-between ">
-      <div className="m-auto  w-[1208px] max-[1208px]:max-w-[768px]">
-        <div className="flex  h-[72px] gap-10 items-center">
+    <div className="bg-white flex items-center justify-between ">
+      <div className="m-auto  w-[1208px] max-[1208px]:max-w-[878px]">
+        <div className="flex  h-[72px] gap-10 items-center max-[1208px]:gap-5">
           <Link href={"/"}>
-          <div className="flex items-center font-bold gap-[11.41px] text-main-color">
-            <Image src={logo} alt="logo" width={40} />
+          <div className="flex items-center font-bold gap-[11.41px] text-main-color  ">
+             
+              <Image src={logo} alt="logo" width={40} />
+             
+            
             <span className="max-[1208px]:hidden">СЕВЕРЯНОЧКА</span>
           </div>
           </Link>

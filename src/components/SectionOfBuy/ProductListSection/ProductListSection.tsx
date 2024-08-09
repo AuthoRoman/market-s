@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Suspense } from "react";
 import ProductItem from "./ProductItem/ProductItem";
 import { FormData, SectionBuyProps } from "@/model/types";
 import Link from "next/link";
+import SceletonProductItem from "@/components/SceletonProductItem/SceletonProductItem";
 
 export const dynamic = "force-dynamic";
 
@@ -51,7 +52,11 @@ const ProductListSection: React.FC<SectionBuyProps> = async ({
         ? data.map((x, index) => {
             if (index < 4 && limited) {
               return (
-                <Link key={x.id} href={`/products/${x.id}`}>
+
+                
+
+                  <Link key={x.id} href={`/products/${x.id}`}>
+<Suspense fallback = {<SceletonProductItem/>}>
                   {" "}
                   <ProductItem
                     img={x.img!}
@@ -65,8 +70,10 @@ const ProductListSection: React.FC<SectionBuyProps> = async ({
                     priceWithoutCard={x.priceWithoutCard}
                     category={x.category}
                     title={title}
-                  />
+                  /> </Suspense>
                 </Link>
+               
+                
               );
             }
             if (!limited) {

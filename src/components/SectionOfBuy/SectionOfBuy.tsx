@@ -1,7 +1,8 @@
-import React from "react";
+import React, { Suspense } from "react";
 import HeaderSection from "./HeaderSection/HeaderSection";
 import ProductListSection from "./ProductListSection/ProductListSection";
 import { SectionBuyProps } from "@/model/types";
+import SceletonProductItem from "../SceletonProductItem/SceletonProductItem";
 
 export const SectionOfBuy: React.FC<SectionBuyProps> = ({ title, limited }) => {
   return (
@@ -13,7 +14,10 @@ export const SectionOfBuy: React.FC<SectionBuyProps> = ({ title, limited }) => {
       }
     >
       <HeaderSection title={title} limited={limited} />
+      <Suspense fallback = {<SceletonProductItem/>}>
+
       <ProductListSection limited={limited} title={title} />
+      </Suspense>
     </div>
   );
 };
