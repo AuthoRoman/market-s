@@ -32,7 +32,7 @@ const MyHeader = () => {
             <div className=" relative   ">
               <input
                 type="text"
-                className="pr-10 pl-2 py-2 border-2 h-10 w-[376px] border-[#70C05B]  rounded hover: outline-none max-[1208px]:max-w-[324px]"
+                className="pr-10 pl-2 py-2 border-2 h-10 w-[376px] border-[#70C05B]  rounded outline-none max-[1208px]:max-w-[324px]"
                 placeholder="Найти товар"
               />
               <Image
