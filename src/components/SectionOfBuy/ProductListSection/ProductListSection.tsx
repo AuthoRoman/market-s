@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import ProductItem from "./ProductItem/ProductItem";
 import { FormData, SectionBuyProps } from "@/model/types";
 import Link from "next/link";
-import SceletonProductItem from "@/components/SceletonProductItem/SceletonProductItem";
+import SceletonProductItem from "@/components/SceletonProductItem/SceletonProductList";
 
 export const dynamic = "force-dynamic";
 
