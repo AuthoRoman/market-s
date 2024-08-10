@@ -15,24 +15,24 @@ const MyHeader = () => {
       <div className="m-auto  w-[1208px] max-[1208px]:max-w-[878px]">
         <div className="flex  h-[72px] gap-10 items-center max-[1208px]:gap-5">
           <Link href={"/"}>
-          <div className="flex items-center font-bold gap-[11.41px] text-main-color  ">
-             
+            <div className="flex items-center font-bold gap-[11.41px] text-main-color  ">
               <Image src={logo} alt="logo" width={40} />
-             
-            
-            <span className="max-[1208px]:hidden">СЕВЕРЯНОЧКА</span>
-          </div>
+
+              <span className="max-[1208px]:hidden">СЕВЕРЯНОЧКА</span>
+            </div>
           </Link>
           <div className="flex gap-6">
-            <Link href={'/catalog'}> <div className="w-[140px] text-base bg-[#70C05B] h-10 rounded  text-white  flex justify-center items-center gap-2 hover: cursor-pointer max-[1208px]:w-[40px]">
-              <Image src={menu} width={24} alt="menu" />
-              <span className="max-[1208px]:hidden"> Каталог</span>
-            </div>
-</Link>
+            <Link href={"/catalog"}>
+              {" "}
+              <div className="w-[140px] text-base bg-[#70C05B] h-10 rounded  text-white  flex justify-center items-center gap-2 hover: cursor-pointer max-[1208px]:w-[40px]">
+                <Image src={menu} width={24} alt="menu" />
+                <span className="max-[1208px]:hidden"> Каталог</span>
+              </div>
+            </Link>
             <div className=" relative   ">
               <input
                 type="text"
-                className="pr-10 pl-2 py-2 border-2 h-10 w-[376px] border-[#70C05B]  rounded hover: outline-none max-[1208px]:max-w-[324px]"
+                className="pr-10 pl-2 py-2 border-2 h-10 w-[376px] border-[#70C05B]  rounded outline-none max-[1208px]:max-w-[324px]"
                 placeholder="Найти товар"
               />
               <Image

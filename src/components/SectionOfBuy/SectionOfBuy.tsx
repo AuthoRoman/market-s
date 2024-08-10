@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import HeaderSection from "./HeaderSection/HeaderSection";
 import ProductListSection from "./ProductListSection/ProductListSection";
 import { SectionBuyProps } from "@/model/types";
-import SceletonProductItem from "../SceletonProductItem/SceletonProductItem";
+import SceletonProductItem from "../SceletonProductItem/SceletonProductList";
 
 export const SectionOfBuy: React.FC<SectionBuyProps> = ({ title, limited }) => {
   return (
