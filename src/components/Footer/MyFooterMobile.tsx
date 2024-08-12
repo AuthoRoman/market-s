@@ -9,7 +9,7 @@ import shop from "@/assets/header_img/buy.png";
 import avatar from "@/assets/header_img/avatar.svg";
 const MyFooterMobile = () => {
   return (
-    <div className="bg-white  fixed bottom-0 left-0 w-[336px]">
+    <div className="bg-white  fixed bottom-0 left-0 w-full">
       <div className="m-[0_auto] max-w-[336px] p-2 flex justify-between items-center text-[#414141]">
         <Link href={"/catalog"}>
           <div className="flex flex-col items-center gap-1">
