@@ -26,7 +26,7 @@ export default function RootLayout({
         <MyHeader />
         <main className="body__without__footer">{children}</main>
         <MyFooter />
-        <div className="hidden max-[900px]:block">
+        <div className="hidden max-[900px]:block max-[900px]:max-w-full ">
          <MyFooterMobile /> 
         </div>
         
