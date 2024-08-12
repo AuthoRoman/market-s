@@ -52,28 +52,24 @@ const ProductListSection: React.FC<SectionBuyProps> = async ({
         ? data.map((x, index) => {
             if (index < 4 && limited) {
               return (
-
-                
-
-                  <Link key={x.id} href={`/products/${x.id}`}>
-<Suspense fallback = {<SceletonProductItem/>}>
-                  {" "}
-                  <ProductItem
-                    img={x.img!}
-                    id={x.id}
-                    brend={x.brend}
-                    country={x.country}
-                    weight={x.weight}
-                    catalogtype={x.catalogtype}
-                    name={x.name}
-                    priceCard={x.priceCard}
-                    priceWithoutCard={x.priceWithoutCard}
-                    category={x.category}
-                    title={title}
-                  /> </Suspense>
+                <Link key={x.id} href={`/products/${x.id}`}>
+                  <Suspense fallback={<SceletonProductItem />}>
+                    {" "}
+                    <ProductItem
+                      img={x.img!}
+                      id={x.id}
+                      brend={x.brend}
+                      country={x.country}
+                      weight={x.weight}
+                      catalogtype={x.catalogtype}
+                      name={x.name}
+                      priceCard={x.priceCard}
+                      priceWithoutCard={x.priceWithoutCard}
+                      category={x.category}
+                      title={title}
+                    />{" "}
+                  </Suspense>
                 </Link>
-               
-                
               );
             }
             if (!limited) {

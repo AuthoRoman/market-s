@@ -9,10 +9,11 @@ import avatar from "@/assets/header_img/avatar.svg";
 import arrowDown from "@/assets/header_img/arrowDown.png";
 import Image from "next/image";
 import Link from "next/link";
+import CatalogIcon from "../Icons/CatalogIcon";
 const MyHeader = () => {
   return (
     <div className="bg-white flex items-center justify-between ">
-      <div className="m-auto  w-[1208px] max-[1208px]:max-w-[878px]">
+      <div className="m-auto  w-[1208px] max-[1208px]:max-w-[878px] max-[900px]:max-w-[336px]">
         <div className="flex  h-[72px] gap-10 items-center max-[1208px]:gap-5">
           <Link href={"/"}>
             <div className="flex items-center font-bold gap-[11.41px] text-main-color  ">
@@ -21,18 +22,18 @@ const MyHeader = () => {
               <span className="max-[1208px]:hidden">СЕВЕРЯНОЧКА</span>
             </div>
           </Link>
-          <div className="flex gap-6">
-            <Link href={"/catalog"}>
+          <div className="flex gap-6 ">
+            <Link href={"/catalog"} className="max-[900px]:hidden">
               {" "}
               <div className="w-[140px] text-base bg-[#70C05B] h-10 rounded  text-white  flex justify-center items-center gap-2 hover: cursor-pointer max-[1208px]:w-[40px]">
-                <Image src={menu} width={24} alt="menu" />
+                <CatalogIcon fill="white" />
                 <span className="max-[1208px]:hidden"> Каталог</span>
               </div>
             </Link>
             <div className=" relative   ">
               <input
                 type="text"
-                className="pr-10 pl-2 py-2 border-2 h-10 w-[376px] border-[#70C05B]  rounded outline-none max-[1208px]:max-w-[324px]"
+                className="pr-10 pl-2 py-2 border-2 h-10 w-[376px] border-[#70C05B]  rounded outline-none max-[1208px]:max-w-[324px] max-[900px]:max-w-[261px]"
                 placeholder="Найти товар"
               />
               <Image
@@ -42,7 +43,7 @@ const MyHeader = () => {
               />
             </div>
           </div>
-          <div className="flex gap-6 text-main-color items-center">
+          <div className="flex gap-6 text-main-color items-center max-[900px]:hidden">
             <div className="flex flex-col items-center hover: cursor-pointer">
               <Image src={heart} alt="like" />
               <span>Избранное</span>
