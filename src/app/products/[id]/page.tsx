@@ -2,7 +2,7 @@ import { FormData } from "@/model/types";
 import UButton from "@/shared/ui/UButton";
 import Image from "next/image";
 import React from "react";
-import smile from '@/assets/icons/smile.png'
+import smile from "@/assets/icons/smile.png";
 import DinDonIcon from "@/components/Icons/DinDonIcon";
 import { SectionOfBuy } from "@/components/SectionOfBuy/SectionOfBuy";
 import TableInfo from "@/components/TableInfo/TableInfo";
@@ -33,11 +33,11 @@ const ProductInfo = async ({ params }: Props) => {
   const icoPath = `/images/products/${product.img}`;
   return (
     <div>
-      <div className="m-[0_auto] max-w-[1208px] ">
-        <div className="mt-10">
+      <div className="m-[0_auto] max-w-[1208px]  max-[900px]:max-w-[336px]">
+        <div className="my-10 flex flex-col">
           <div className="text-[24px] font-bold my-10">{product.name}</div>
-          <div className="flex gap-10 justify-between">
-            <div className="w-[500px] h-[500px] relative">
+          <div className="flex gap-10 justify-between max-[900px]:flex-col max-[900px]:gap-2  ">
+            <div className="w-[500px] h-[500px] relative max-[900px]:w-[336px] max-[900px]:h-[336px]">
               <Image
                 width={500}
                 height={500}
@@ -74,19 +74,28 @@ const ProductInfo = async ({ params }: Props) => {
               <div className="flex flex-col gap-2 items-center">
                 <UButton img>В корзину</UButton>
                 <div className="flex items-center gap-2 p-1">
-                  <Image src={smile} alt="smile"/>
-                  <span className="text-[#70C05B] text-[12px] w-[164px] text-center">Вы получаете <span className="font-bold">10 бонусов</span> </span>
+                  <Image src={smile} alt="smile" />
+                  <span className="text-[#70C05B] text-[12px] w-[164px] text-center">
+                    Вы получаете <span className="font-bold">10 бонусов</span>{" "}
+                  </span>
                 </div>
                 <div className="flex items-center gap-2 p-1">
-                  <DinDonIcon/>
-                  <span className=" text-[#606060] text-[12px] w-[200px] text-center">Уведомить о снижении цены</span>  
-                  </div>
+                  <DinDonIcon />
+                  <span className=" text-[#606060] text-[12px] w-[200px] text-center">
+                    Уведомить о снижении цены
+                  </span>
+                </div>
               </div>
-               <TableInfo brend={product.brend} country={product.country} weight={product.weight}/>
+              <TableInfo
+                brend={product.brend}
+                country={product.country}
+                weight={product.weight}
+              />
             </div>
           </div>
         </div>
-        <SectionOfBuy limited title="promotion"/>
+
+        <SectionOfBuy limited title="promotion" />
       </div>
     </div>
   );
