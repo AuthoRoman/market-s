@@ -33,7 +33,7 @@ const ProductItem: React.FC<InfoSectionsProducts> = ({title, category, name,pric
              <span className="text-[12px] max-[900px]:text-[8px]  text-[#BFBFBF] ">Обычная</span>
           </div>}
         </div>
-        <div className=" leading-none overflow-hidden  text-clip h-[48px] max-[900px]:h-full">
+        <div className=" leading-none overflow-hidden  text-clip h-full max-[900px]:h-full">
  <span className="text-[16px] max-[900px]:text-[12px] leading-[-100%]  ">{name}</span>
 
         </div>
