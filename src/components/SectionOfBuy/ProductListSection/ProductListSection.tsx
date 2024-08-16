@@ -47,7 +47,7 @@ const ProductListSection: React.FC<SectionBuyProps> = async ({
   const data = await getProducts(title);
   console.log(data);
   return (
-    <div className="flex gap-10 items-center flex-wrap max-w-full ">
+    <div className="flex gap-10 items-center flex-wrap max-w-full max-[900px]:gap-4">
       {data.length > 0
         ? data.map((x, index) => {
             if (index < 4 && limited) {
