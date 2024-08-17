@@ -27,7 +27,7 @@ const ArticleCard: React.FC<ArticleCardProps> = ({ type }) => {
     food: "Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте кешбэк 10% баллами в апреле!",
   }[type];
   return (
-    <div className="w-[376px] hover:shadow-[4px_8px_16px_0_rgba(255,102,51,0.2)] max-[1208px]:max-w-[224px] max-[1208px]:p-[5px]max-[1208px]:h-[272px]">
+    <div className="w-[376px] hover:shadow-[4px_8px_16px_0_rgba(255,102,51,0.2)] max-[1208px]:max-w-[224px] max-[1208px]:p-[5px]max-[1208px]:h-[272px] max-[900px]:max-w-[336px]">
       <Image src={icoPath!} alt={"icoPath"} width={376} height={162} />
       <div className="flex flex-col gap-[10px] justify-between bg-white p-[10px]   h-[255px]  ">
         <span className="font-bold text-[18px] max-[1208px]:text-[16px]">
